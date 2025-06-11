@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Game Webapp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        #game-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px dashed #ccc;
+            text-align: center;
+        }
+        #readme {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+    <!-- Import a funny game from an external library -->
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Funny Game Webapp!</h1>
+    
+    <div id="game-container">
+        <h2>Click for Confetti Fun!</h2>
+        <button onclick="startConfetti()">Click Me!</button>
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <div id="readme">
+        <h2>About This App</h2>
+        <!-- README_CONTENT will be replaced by the server -->
+        <!-- README_CONTENT -->
+    </div>
+
+    <script>
+        // Initialize confetti game
+        const confettiSettings = { target: 'confetti-canvas', max: 150 };
+        const confetti = new ConfettiGenerator(confettiSettings);
+        
+        function startConfetti() {
+            confetti.render();
+            setTimeout(() => confetti.clear(), 3000);
+        }
+    </script>
+</body>
+</html>
