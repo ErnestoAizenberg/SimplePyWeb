@@ -18,10 +18,10 @@ This is a simple web application that demonstrates:
 - Web browser with JavaScript enabled
 
 ## Running the App
-
-1. Execute `python server.py`
-2. Your browser should open automatically
-3. Click the button to see the confetti explosion!
+```shell
+git clone https://github.com/ErnestoAizenberg/SimplePyWeb.git
+python server.py
+```
 
 ## Customization
 
