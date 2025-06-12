@@ -20,6 +20,7 @@ This is a simple web application that demonstrates:
 ## Running the App
 ```shell
 git clone https://github.com/ErnestoAizenberg/SimplePyWeb.git
+cd SimplePyWeb
 python server.py
 ```
 
